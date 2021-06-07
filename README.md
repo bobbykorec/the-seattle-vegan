@@ -1,6 +1,6 @@
 # The Seattle Vegan
 
-https://theseattlevegan.com/
+https://theseattlevegan.com
 
 This is a website I designed and built using the Mapbox API. The site is a curated list of all of the vegan and vegan-friendly restaurants in Seattle with convenient map and list views.
 
