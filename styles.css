@@ -1,0 +1,677 @@
+body {
+  font: 400 14px/22px "Montserrat", Sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Headings –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.heading,
+.mobile-heading {
+  background-color: #000; /*1E1F26*/
+  color: #fff;
+  box-shadow: 0 0 8px #000; /*1E1F26*/
+  
+  background-color: #1f4753; 
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  position: relative;
+  height: 75px;
+  z-index: 2;
+}
+
+.mobile-heading { 
+  position: relative;
+  top: 0; left: 0; right: 0; bottom: 0;
+  height: 75px;  
+  z-index: 4;  
+  display: none;  
+}
+
+.heading h1,
+.mobile-heading h1 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 26px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+/* Logo –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.heading .logo-wrapper,
+.mobile-heading .logo-wrapper {
+  overflow: hidden;
+}
+
+.heading img,
+.mobile-heading img {
+  position: relative;
+  top: -58px;
+  left: -10px;
+  width: 250px;
+  height: 200px;
+}
+
+/* Navbar –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.desktop-navbar,
+.mobile-heading-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 30px 0 0;
+}
+
+.navbar-item,
+.mobile-heading-icon {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  margin: 0 7px;
+  padding: 12px;
+  color: #fff; 
+  transition: all 150ms ease-in-out;  
+  text-transform: uppercase;
+}
+
+/* Mobile navbar toggler ––––––––––––––––––––––––––––––––––––––––––– */
+
+.navbar-toggler {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-right: 15px; 
+  
+  padding: 0 15px;
+}
+
+.navbar-toggler:visited,
+.navbar-toggler:focus,
+.navbar-toggler:focus-within,
+.navbar-toggler:active {
+  border: none;
+  outline: none;
+}
+
+.navbar-togger .hamburger-container {
+  position: relative;
+}
+
+.navbar-toggler .icon-bar {
+  position: relative;
+  display: block;
+  background: #ccc;
+  width: 27px;
+  height: 2px;
+  margin: 4px 0;
+  border-radius: 5px;  
+  transition: all 250ms ease-in-out;
+  background-color: #fff;
+}
+
+/* Map –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.map {
+  position: absolute;
+  left: 33.3333%;
+  width: 66.6666%;
+  top: 0;
+  bottom: 0;
+  
+  right: 0;
+  left: 500px;
+  width: 100%;
+  width: calc(100vw - 500px);
+}
+
+/* Sidebar and restaurant listings –––––––––––––––––––––– */
+
+.sidebar {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-right: 3px solid rgba(0, 0, 0, 0.1);
+  background: #fafafa;
+  z-index: 1;
+}
+
+.listings {
+  position: fixed;
+  top: 75px;
+  width: 500px;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 150px;  
+}
+
+.listings .item {
+  display: block;
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.listings .item:last-child {
+  border-bottom: none;
+}
+
+.listings .item.active {
+  background-color: #eee;
+}
+
+.listings .title-info {
+  height: auto;
+}
+
+div.title-info img {
+  height: 120px;
+  width: 140px;
+  object-fit: cover; 
+  position: absolute;
+  top: -20px;
+  right: 0;
+  border-radius: 2px;
+}
+
+/* Sidebar listings ––––––––––––––––––––––––––––––––––––––––––– */
+
+.listings .item .title {
+  display: block;
+  color: rgba(0,0,0,.7); 
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.listings .item .title:hover {
+  color: #217dbb;
+}
+
+.title-info {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #4f585b;
+  
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.title-info > i {
+  padding-right: 8px;
+  color: #636e72;
+}
+
+.URL-address {
+  position: relative;
+  top: 5px;
+  text-align: left;
+  background: #ff6347;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff; 
+  transition: 150ms all ease-in-out;
+}
+
+.URL-address:hover {
+  background: #e5593f;
+}
+
+/* Sidebar scrollbar ––––––––––––––––––––––––––––––––––––––––––– */
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #636e72;
+}
+
+/* Map marker ––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.marker {
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/locationmarker.png");  
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 18px 24px;
+}
+
+.mapboxgl-container .leaflet-marker-icon {
+  cursor: pointer;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Mapbox icon in map –––––––––––––––––––––––––––––––––––––––– */
+
+.mapboxgl-ctrl-bottom-left {
+  display: none;
+}
+
+/* Map restaurant cards ––––––––––––––––––––––––––––––––––––––– */
+
+.mapboxgl-popup-content {
+  font: 400 12px "Montserrat", Sans-serif;
+  padding: 0;
+  width: 325px;
+  height: 170px; 
+  box-shadow: 0 11px 20px -10px rgba(0, 0, 0, 0.6);
+  animation: popupfadein .2s ease-in-out forwards;
+  opacity: 0;
+  bottom: -5px;
+}
+
+@keyframes popupfadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
+}
+
+.mapboxgl-popup-content h3 {
+  display: block;
+  margin: 0; 
+  padding: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  background: #383838;
+  text-align: center;
+  border-radius: 3px 3px 0 0;  
+}
+
+.mapboxgl-popup-content h3 a {
+  color: #fff;
+}
+
+.card-contents-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mapboxgl-popup-content .card-left {
+  margin: 0;
+  padding: 8px 12px;
+  padding-left: 0;
+  font-weight: 400;
+  color: #4f585b;
+  line-height: 22px;
+  top: 8px;
+  font-size: 11px;
+}
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup {
+  padding-bottom: 40px;
+}
+
+.mapboxgl-popup-content div {
+  position: relative;
+}
+
+.card-image img {
+  height: 100px;
+  width: 120px;
+  object-fit: cover; 
+  position: relative;
+  border-radius: 2px;
+  top: 15px;
+}
+
+/* Menu btn on popup restaurant card –––––––––––––––––––––––––––––––––––––––––– */
+
+.mapboxgl-popup-content .URL-address {
+  font-weight: 700;
+}
+
+.mapboxgl-ctrl-top-right {
+  position: relataive;
+  top: 75px;
+}
+
+mapbox-ctrl {
+  clear: none !important; 
+}
+
+/* Mobile list and map view btns –––––––––––––––––––––––––––––––––––––––––––– */
+
+.list-menu-btn,
+.map-view-btn {
+  background: #4fb4d2;
+  padding: 5px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  z-index: 2;  
+  display: none;  
+}
+
+.list-menu-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.map-view-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  z-index: 7;  
+}
+
+.list-menu-btn a,
+.map-view-btn a {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.map-view-btn-show {
+  display: block;
+  animation: mapbuttonfadein .3s ease-in-out;
+}
+
+@keyframes mapbuttonfadein {
+  0% { opacity: 0; }
+  60% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Overlay section ––––––––––––––––––––––––––––––––––––––– */
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  color: #fff;
+  z-index: 3;
+  overflow: hidden;
+  transition: all 200ms ease-in-out; 
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay-back-btn {
+  position: absolute;
+  top: 26px;
+  right: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.overlay-content {
+  position: relative;  
+  max-width: 250px;  
+  display: none;
+  opacity: 0;
+}
+
+.overlay-content .about-logo-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 105px;
+}
+
+.overlay-content .about-logo-wrapper img {
+  position: relative;
+  left: -23px;
+}
+
+.overlay-content h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  animation: mobileOverlayContentFaadeIn 200ms linear both;
+  animation-delay: 200ms;
+}
+
+.overlay-content p {
+  text-align: left;
+  animation: mobileOverlayContentFaadeIn 200ms linear both;
+  animation-delay: 300ms;
+}
+
+.mobile-heading-icons {
+  padding: 0;
+  margin-top: 30px;
+  animation: mobileOverlayContentFaadeIn 200ms linear both;
+  animation-delay: 400ms;
+}
+
+.mobile-heading-icon {
+  background: transparent;
+  font-size: 20px;
+  margin: 0 15px;
+  color: #8b8c8c;
+}
+
+.show-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.show-overlay-content {
+  display: block;
+  opacity: 1;
+  top: 0;
+  animation: mobileOverlayContentFaadeIn 300ms linear both;
+  animation-delay: 200ms;
+}
+
+@keyframes mobileOverlayContentFaadeIn {
+  0% { opacity: 0; top: -40px; }
+  30% { opacity: 0; }
+  100% { opacity: 1; top: -50px; }
+}
+
+.mobile-heading-fade {
+  opacity: 1;
+  transition: all 100ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translateY(-100px);
+}
+
+
+/* Media queries ––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  body {
+    overflow: hidden;
+  }
+  
+  .map {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0 !important;
+    width: 100%;
+    height: 100vh;
+    transition: 250ms all ease-in-out;
+  }
+  
+  .map-motion {
+    transform: translateX(50px);
+  }
+  
+  .sidebar {
+    position: relative;
+    bottom: 0;
+    left: -100vw;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 4;
+    transform: translateX(0vw);
+    transition: 250ms all ease-in-out; 
+  }
+  
+  .toggle-sidebar {
+    transform: translateX(100vw);
+  }
+  
+  .listings {
+    position: relative;
+    top: 75px;
+    top: 0;
+    width: 100%;
+    padding: 0;   
+  }
+  
+  .title {
+    font-size: 13px;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+  
+  .mobile-heading {
+    position: fixed;
+    top: 0; left: 0;
+    display: block;
+    transition: 200ms all ease-in-out;
+    transition-delay: 150ms;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+  }
+  
+  .hide-mobile-header {
+    transform: translateY(-100px);
+  }
+  
+  .mobile-heading h1 {
+    font-size: 24px; 
+  }
+ 
+  .list-menu-btn {
+    display: block;
+  }
+
+  .mapboxgl-popup-content {
+    font: 400 11px/22px "Montserrat", Sans-serif;
+    padding: 0 0 10px 0;
+    line-height: 20px; 
+  }
+  
+  .mapboxgl-popup-content h3, 
+  .mapboxgl-popup-content h4 {
+    padding: 5px;
+  }
+  
+  .mapboxgl-popup-content h4 {
+    padding: 8px 12px;
+  }
+  
+  .mapboxgl-ctrl-top-right {
+    position: fixed;
+    top: 75px;
+  } 
+  
+  .mapboxgl-ctrl-bottom-right {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* info icon on map */ 
+  div.mapboxgl-ctrl.mapboxgl-ctrl-attrib.mapboxgl-compact::after {
+    display: none;
+  }
+  
+  div.title-info img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover; 
+  position: absolute;
+  top: -20px;
+  right: 0;
+  border-radius: 2px;
+  }
+ }
+
+@media screen and (max-width: 400px) {
+   .mapboxgl-popup-content {
+    font: 400 10px "Montserrat", Sans-serif;
+    padding: 0 0 10px 0;
+    width: 275px;
+    line-height: 16px;     
+  }
+  
+  .card-image img {
+  height: 80px;
+  width: 100px;
+  object-fit: cover; 
+  position: relative;
+  border-radius: 2px;
+  top: 25px;
+  }
+}
