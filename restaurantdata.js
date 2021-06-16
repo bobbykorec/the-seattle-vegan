@@ -5,18 +5,18 @@ const restaurants = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.3764911, 47.6870401]
+        "coordinates": [-122.378742, 47.668316]
       },
       "properties": {
         "restaurant": "Cycle Dogs",
         "type": "Vegan",
         "cuisine": "Comfort",
-        "address": "8000 15th Ave NW",
+        "address": "5410 17th Ave NW",
         "neighborhood": "Ballard",
         "menu": "menu",
         "image": "<img src='images/cycledogs.jpg' />",
-        "websitemenuURL": "https://www.cycledogs.biz/menus/",
-        "websiteFull": "https://www.cycledogs.biz/"     
+        "websitemenuURL": "https://cycle-dogs.square.site/s/order/",
+        "websiteFull": "https://cycle-dogs.square.site/"     
       }
     }, 
     {
@@ -63,7 +63,7 @@ const restaurants = {
       },
       "properties": {
         "restaurant": "El Borracho",
-        "type": "Vegan-Friendly",
+        "type": "Vegan",
         "cuisine": "Mexican",
         "address": "5465 Leary Ave NW",
         "neighborhood": "Ballard",
@@ -1053,7 +1053,7 @@ const restaurants = {
       },
       "properties": {
         "restaurant": "El Borracho Pike Place",
-        "type": "Vegan-Friendly",
+        "type": "Vegan",
         "cuisine": "Mexican",
         "address": "1521 1st Ave",
         "neighborhood": "Downtown",
