@@ -1769,24 +1769,6 @@ const restaurants = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.3343862, 47.6014189]
-      },
-      "properties": {
-        "restaurant": "Jujubeet Cafe",
-        "type": "Vegan-Friendly",
-        "cuisine": "Healthy",
-        "address": "107 1st Ave S",
-        "neighborhood": "Pioneer Square",
-        "menu": "menu",
-        "image": "<img src='images/jujubeet.jpg' />",
-        "websitemenuURL": "https://jujubeet.com/",
-        "websiteFull": "https://jujubeet.com/"     
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [-122.3570047, 47.6187714]
       },
       "properties": {
