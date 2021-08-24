@@ -1535,24 +1535,6 @@ const restaurants = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.3509853, 47.705199]
-      },
-      "properties": {
-        "restaurant": "Tim's Tavern",
-        "type": "Vegan-Friendly",
-        "cuisine": "Comfort",
-        "address": "602 N 105th St",
-        "neighborhood": "Greenwood",
-        "menu": "menu",
-        "image": "<img src='images/timstavern.jpg' />",
-        "websitemenuURL": "https://timslivemusic.com/",
-        "websiteFull": "https://timslivemusic.com/"     
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [-122.2773101, 47.5509062]
       },
       "properties": {
