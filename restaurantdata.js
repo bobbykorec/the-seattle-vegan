@@ -599,6 +599,24 @@ const restaurants = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
+        "coordinates": [-122.32658386230469, 47.62290573120117]
+      },
+      "properties": {
+        "restaurant": "Finch & Pine",
+        "type": "Vegan-Friendly",
+        "cuisine": "Brunch",
+        "address": "711 Bellevue Ave E",
+        "neighborhood": "Capitol Hill",
+        "menu": "menu",
+        "image": "<img src='images/finchandpine.jpg' />",
+        "websitemenuURL": "https://www.finchandpine.com/menu",
+        "websiteFull": "https://www.finchandpine.com/"     
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
         "coordinates": [-122.312145, 47.621597]
       },
       "properties": {
