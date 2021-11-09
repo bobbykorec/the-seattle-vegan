@@ -15,7 +15,7 @@ const restaurants = {
         "neighborhood": "Ballard",
         "menu": "menu",
         "image": "<img src='images/cycledogs.jpg' />",
-        "websitemenuURL": "https://cycle-dogs.square.site/s/order/",
+        "websitemenuURL": "https://cycle-dogs.square.site/",
         "websiteFull": "https://cycle-dogs.square.site/"     
       }
     }, 
