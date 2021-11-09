@@ -2094,24 +2094,6 @@ const restaurants = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.3361988, 47.6206131]
-      },
-      "properties": {
-        "restaurant": "Jujubeet",
-        "type": "Vegan",
-        "cuisine": "Healthy",
-        "address": "107 1st Ave S",
-        "neighborhood": "South Lake Union",
-        "menu": "menu",
-        "image": "<img src='images/jujubeet.jpg' />",
-        "websitemenuURL": "https://jujubeet.com/",
-        "websiteFull": "https://jujubeet.com/"     
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
         "coordinates": [-122.3348787, 47.6267122]
       },
       "properties": {
